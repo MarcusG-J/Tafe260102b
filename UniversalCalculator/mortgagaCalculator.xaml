@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="Calculator.mortgagaCalculator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+		<StackPanel Orientation="Vertical">
+			<TextBlock FontSize="40" Text="Monrtage Calculator" HorizontalAlignment="Center"></TextBlock>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<TextBlock Text="Principal borrowed: $" FontSize="25" Margin="10" Width="300" TextAlignment="Right"/>
+				<TextBox Width="400px" Margin="10" FontSize="25" BorderBrush="Orange" x:Name="borrowedTextBox"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<TextBlock Text="Years:" FontSize="25" Margin="10" Width="300" TextAlignment="Right"/>
+				<TextBox Width="400px" Margin="10" FontSize="25" BorderBrush="Blue" x:Name="yearsTextBox"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<TextBlock Text="Months:" FontSize="25" Margin="10" Width="300" TextAlignment="Right"/>
+				<TextBox Width="400px" Margin="10" FontSize="25" BorderBrush="Purple" x:Name="monthsTextBox"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<TextBlock Text="Annual Interest Rate:" FontSize="25" Margin="10" Width="300" TextAlignment="Right"/>
+				<TextBox Width="400px" Margin="10" FontSize="25" BorderBrush="Orange" x:Name="annualTextBox"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<TextBlock Text="Monthly Interest Rate:" FontSize="25" Margin="10" Width="300" TextAlignment="Right"/>
+				<TextBox Width="400px" Margin="10" FontSize="25" BorderBrush="Blue" x:Name="monthlyTextBox"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<TextBlock Text="Monthly Repayment:" FontSize="25" Margin="10" Width="300" TextAlignment="Right"/>
+				<TextBox Width="400px" Margin="10" FontSize="25" BorderBrush="Purple" x:Name="repaymentTextBox"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Width="490">
+				<Button x:Name="calculateButton" FontSize="25" Content="Calculate" Margin="10" HorizontalAlignment="Right" BorderBrush="Green"
+				Click="CalculateButton_Click"/>
+				<Button x:Name="exitButton" FontSize="25" Content="Exit" Margin="10" HorizontalAlignment="Right" BorderBrush="Red"
+				Click="exitButton_Click"/>
+			</StackPanel>
+				
+		</StackPanel>
+	</Grid>
+</Page>
